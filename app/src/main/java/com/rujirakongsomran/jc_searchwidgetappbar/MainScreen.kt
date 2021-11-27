@@ -130,3 +130,15 @@ fun SearchAppBar(
 fun DefaultAppBarPreview() {
     DefaultAppBar(onSearchClicked = {})
 }
+
+@Preview
+@Composable
+fun SearchAppBarPreview() {
+    SearchAppBar(
+        text = "Some random text",
+        onTextChange = {},
+        onCloseClicked = {},
+        onSearchClicked = {}
+    )
+
+}
