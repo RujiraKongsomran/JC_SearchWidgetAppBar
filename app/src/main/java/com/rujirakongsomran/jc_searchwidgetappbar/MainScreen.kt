@@ -120,6 +120,10 @@ fun SearchAppBar(
                 onSearch = {
                     onSearchClicked(text)
                 }
+            ),
+            colors = TextFieldDefaults.textFieldColors(
+                backgroundColor = Color.Transparent,
+                cursorColor = Color.White.copy(alpha = ContentAlpha.medium)
             )
         )
     }
